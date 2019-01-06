@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="ca.blogspot.sjatyourservice.allaboutbihar">
+
+    <uses-permission android:name="ca.blogspot.sjatyourservice.allaboutbihar.permission.MAPS_RECEIVE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="com.google.android.provider.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.media.action.IMAGE_CAPTURE"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.media.action.IMAGE_CAPTURE"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Miscellaneous.Feedback"
+            android:label="Feedback"
+            android:theme="@style/MyMaterialTheme.Base">
+        </activity>
+        <activity android:name=".Volley">
+        </activity>
+        <activity android:name=".Data">
+        </activity>
+        <activity
+            android:name=".Miscellaneous.Weather"
+            android:theme="@style/MyMaterialTheme.Base">
+        </activity>
+        <activity
+            android:name=".ABOUT"
+            android:label="@string/title_activity_about"
+            android:theme="@style/MyMaterialTheme.Base">
+        </activity>
+        <activity
+            android:name=".Miscellaneous.Query"
+            android:theme="@style/MyMaterialTheme.Base">
+        </activity>
+        <activity
+            android:name=".Miscellaneous.Faq"
+            android:theme="@style/MyMaterialTheme.Base">
+        </activity>
+        <activity
+            android:name=".Miscellaneous.About_Developer"
+            android:theme="@style/MyMaterialTheme.Base">
+        </activity>
+        <activity
+            android:name=".Miscellaneous.Jhar_State_Wise_View"
+            android:theme="@style/MyMaterialTheme.Base">
+        </activity>
+        <activity
+            android:name=".District_List"
+            android:theme="@style/MyMaterialTheme.Base">
+        </activity>
+        <activity
+            android:name=".District_Class.DisplayMadhepura"
+            android:parentActivityName=".District_List"
+            android:theme="@style/MyMaterialTheme.Base">
+        </activity>
+        <activity
+            android:name=".District_Class.DisplayAraria"
+            android:theme="@style/MyMaterialTheme.Base">
+        </activity>
+        <activity
+            android:name=".District_Class.DisplayKatihar"
+            android:theme="@style/MyMaterialTheme.Base">
+        </activity>
+        <activity
+            android:name=".District_Class.DisplayAurangabad"
+            android:theme="@style/MyMaterialTheme.Base">
+        </activity>
+        <activity
+            android:name=".District_Class.DisplayGopalganj"
+            android:theme="@style/MyMaterialTheme.Base">
+        </activity>
+        <activity
+            android:name=".District_Class.DisplayKaimur"
+            android:theme="@style/MyMaterialTheme.Base">
+        </activity>
+        <activity
+            android:name=".District_Class.DisplayBuxar"
+            android:theme="@style/MyMaterialTheme.Base">
+        </activity>
+        <activity
+            android:name=".District_Class.DisplayLakhisarai"
+            android:theme="@style/MyMaterialTheme.Base">
+        </activity>
+        <activity
+            android:name=".District_Class.DisplayKhagaria"
+            android:theme="@style/MyMaterialTheme.Base">
+        </activity>
+        <activity
+            android:name=".District_Class.DisplayGaya"
+            android:theme="@style/MyMaterialTheme.Base">
+        </activity>
+        <activity
+            android:name=".District_Class.DisplayMuzaffarpur"
+            android:theme="@style/MyMaterialTheme.Base">
+        </activity>
+        <activity
+            android:name=".District_Class.DisplayJehanabad"
+            android:theme="@style/MyMaterialTheme.Base">
+        </activity>
+        <activity
+            android:name=".District_Class.DisplayNalanda"
+            android:theme="@style/MyMaterialTheme.Base">
+        </activity>
+        <activity
+            android:name=".District_Class.DisplayMunger"
+            android:theme="@style/MyMaterialTheme.Base">
+        </activity>
+        <activity
+            android:name=".District_Class.DisplayBhagalpur"
+            android:theme="@style/MyMaterialTheme.Base">
+        </activity>
+        <activity
+            android:name=".District_Class.DisplayBhojpur"
+            android:theme="@style/MyMaterialTheme.Base">
+        </activity>
+        <activity
+            android:name=".District_Class.DisplayJamui"
+            android:theme="@style/MyMaterialTheme.Base">
+        </activity>
+        <activity
+            android:name=".District_Class.DisplayArwal"
+            android:theme="@style/MyMaterialTheme.Base">
+        </activity>
+        <activity
+            android:name=".District_Class.DisplayBegusarai"
+            android:theme="@style/MyMaterialTheme.Base">
+        </activity>
+        <activity
+            android:name=".District_Class.DisplayKishanganj"
+            android:theme="@style/MyMaterialTheme.Base">
+        </activity>
+        <activity
+            android:name=".District_Class.DisplayDarbhanga"
+            android:theme="@style/MyMaterialTheme.Base">
+        </activity>
+        <activity
+            android:name=".District_Class.DisplayMadhubani"
+            android:theme="@style/MyMaterialTheme.Base">
+        </activity>
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+
+
+
+             key information
+Link : https://developers.google.com/maps/documentation/directions/
+		 * project name : my project  onyx-principle-195510
+		 * name : API key 1 of all about bihar simple one
+		 *AIzaSyBDmkKvBefHMIjuNMBPdHsdUMU7j_bhA14
+
+
+		 new key AIzaSyD4JTkPvf7mzEIY3mmyz15TEnj64xpixIM
+       
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key"/>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        -->
+        <activity
+            android:name=".Miscellaneous.About_App"
+            android:theme="@style/MyMaterialTheme.Base">
+        </activity>
+        <!--
+        <activity
+            android:name=".Fetching_Feebback_List"
+            android:theme="@style/MyMaterialTheme.Base">
+        </activity>
+        -->
+        <activity
+            android:name=".Jharkhand_Quiz.JHARKHAND_Quiz"
+            android:theme="@style/MyMaterialTheme.Base">
+        </activity>
+        <activity
+            android:name=".Newnews.Information"
+            android:theme="@style/MyMaterialTheme.Base"/>
+        <activity
+            android:name=".Newnews.Newnews"
+            android:theme="@style/MyMaterialTheme.Base"/>
+        <activity
+            android:name=".Fragment_Collection"
+            android:label="JHARKHAND STATE DETAILS"
+            android:theme="@style/MyMaterialTheme.Base"/>
+
+        <!--
+        <activity
+            android:name=".Newnews.Information"
+            android:theme="@style/MyMaterialTheme.Base">
+        </activity>
+        -->
+
+        <activity android:name=".MoreAboutJharkhand">
+        </activity>
+        <activity
+            android:name=".District_Class.DisplayBanka"
+            android:theme="@style/MyMaterialTheme.Base">
+        </activity>
+        <activity
+            android:name=".District_Class.DisplayNawada"
+            android:theme="@style/MyMaterialTheme.Base">
+        </activity>
+        <activity
+            android:name=".District_Class.DisplayPashchimChamparan"
+            android:theme="@style/MyMaterialTheme.Base">
+        </activity>
+        <activity
+            android:name=".District_Class.DisplayPurbaChamparan"
+            android:theme="@style/MyMaterialTheme.Base">
+        </activity>
+        <activity
+            android:name=".District_Class.DisplayPurnia"
+            android:theme="@style/MyMaterialTheme.Base">
+        </activity>
+        <activity
+            android:name=".District_Class.DisplayRohtas"
+            android:theme="@style/MyMaterialTheme.Base">
+        </activity>
+        <activity
+            android:name=".District_Class.DisplaySaharsa"
+            android:theme="@style/MyMaterialTheme.Base">
+        </activity>
+        <activity
+            android:name=".District_Class.DisplaySamastipur"
+            android:theme="@style/MyMaterialTheme.Base">
+        </activity>
+        <activity
+            android:name=".District_Class.DisplaySheikhpura"
+            android:theme="@style/MyMaterialTheme.Base">
+        </activity>
+        <activity
+            android:name=".District_Class.DisplaySheohar"
+            android:theme="@style/MyMaterialTheme.Base">
+        </activity>
+        <activity
+            android:name=".District_Class.DisplaySitamarhi"
+            android:theme="@style/MyMaterialTheme.Base">
+        </activity>
+        <activity
+            android:name=".District_Class.DisplaySupaul"
+            android:theme="@style/MyMaterialTheme.Base">
+        </activity>
+        <activity
+            android:name=".District_Class.DisplaySiwan"
+            android:theme="@style/MyMaterialTheme.Base">
+        </activity>
+        <activity
+            android:name=".District_Class.DisplayVaishali"
+            android:theme="@style/MyMaterialTheme.Base">
+        </activity>
+        <activity
+            android:name=".District_Class.DisplaySaran"
+            android:theme="@style/MyMaterialTheme.Base">
+        </activity>
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key"/>
+
+        <activity
+            android:name=".Google_Location.OnlyMapsActivity"
+            android:label="@string/title_activity_maps">
+        </activity>
+    </application>
+
+</manifest>
